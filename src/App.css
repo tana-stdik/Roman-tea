@@ -10,26 +10,47 @@
 	border: 2px solid rgb(52, 43, 226);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 260px 1fr 80px;
-	grid-template-areas: "header header header"
+	grid-template-rows: 80px 180px 1fr 80px;
+	grid-template-areas: "menu menu menu"
+	"header header header"
 	"main main main"
 	"footer footer footer";
 }
 .grid-header,
-.grid-side,
+.grid-menu,
 .grid-content,
 .grid-footer {
 	padding: 30px;
 	border: 2px solid rgb(43, 226, 55);
 }
 
-.grid-main {
-	border: 2px solid rgb(226, 137, 43);
-	grid-area: main;	
+.grid-menu {
+	grid-area: menu;
 }
 
 .grid-header {
 	grid-area: header;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.header-menu {
+	border: 2px solid rgb(43, 226, 226);
+	height: 80px;
+}
+
+.header-logo {
+	border: 2px solid rgb(35, 86, 86);
+	height: 180px;
+}
+
+.grid-main {
+	border: 2px solid rgb(226, 137, 43);
+	grid-area: main;	
 }
 
 .main {

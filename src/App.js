@@ -6,7 +6,10 @@ function App() {
     <div className="App">
      <div class="content">
       <div class="grid-wrapper">
-        <header class="grid-header">
+      <nav class="grid-menu">
+          Menu
+        </nav>
+        <header class="grid-header header">
           Header
         </header>
         <main class="grid-main main">
