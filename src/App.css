@@ -1,69 +1,69 @@
 .App {
   text-align: center;
 }
-.content {
-	border: 2px solid rgb(22, 23, 22);
-}
 
-.grid-wrapper {
-	margin: 0 80px 0 80px;
-	border: 2px solid rgb(52, 43, 226);
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 80px 180px 1fr 80px;
-	grid-template-areas: "menu menu menu"
-	"header header header"
-	"main main main"
-	"footer footer footer";
+.color__icon {
+  color: green;
 }
-.grid-header,
-.grid-menu,
-.grid-content,
-.grid-footer {
-	padding: 30px;
+.grid__wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template: minmax(120px, auto) 1fr minmax(80px, auto) / 1fr;
+	grid-template-areas: "header"
+		"main"
+		"footer";
 	border: 2px solid rgb(43, 226, 55);
 }
 
-.grid-menu {
-	grid-area: menu;
-}
-
-.grid-header {
+.grid__header {
 	grid-area: header;
-}
-
-.header {
+	padding: 15px;
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template: 1fr / minmax(auto, 130px) minmax(auto, 1000px) minmax(auto, 130px) minmax(auto, 130px) minmax(auto, 130px);
+	border: 2px solid rgb(43, 52, 226);
 }
 
-.header-menu {
-	border: 2px solid rgb(43, 226, 226);
-	height: 80px;
+.header__logo {
+	border: 2px solid rgb(217, 255, 127);
 }
 
-.header-logo {
-	border: 2px solid rgb(35, 86, 86);
-	height: 180px;
+.header__navbar {
+	border: 2px solid rgb(244, 143, 244);
 }
 
-.grid-main {
-	border: 2px solid rgb(226, 137, 43);
-	grid-area: main;	
+.header__likes {
+	border: 2px solid rgb(127, 140, 255);
 }
 
-.main {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	height: 900px;
+.header__shoppingCart {
+	border: 2px solid aquamarine;
 }
 
-
-.main-content {
-	border: 2px solid rgb(226, 61, 43);
+.header__languageSelection {
+	border: 2px solid rgb(133, 224, 183);
 }
-.grid-footer {
+
+.grid__main {
+	grid-area: main;
+	border: 2px solid rgb(226, 43, 67);
+}
+
+.grid__footer {
 	grid-area: footer;
+	display: grid;
+	padding: 15px;
+	grid-template: 1fr / minmax(auto, 466px) minmax(auto, 466px) minmax(auto, 466px);
+	border: 2px solid rgb(174, 226, 43);
+}
+
+.footer__reviews {
+	border: 2px solid aquamarine;
+}
+
+.footer__forTea {
+	border: 2px solid rgb(217, 255, 127);
+}
+
+.footer__contacts {
+	border: 2px solid rgb(226, 43, 67);
 }

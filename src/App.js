@@ -4,39 +4,39 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <div class="content">
-      <div class="grid-wrapper">
-      <nav class="grid-menu">
-          Menu
-        </nav>
-        <header class="grid-header header">
-          Header
-        </header>
-        <main class="grid-main main">
-          <div class="main-content">
-            Content1
+      <div class="grid__wrapper">
+        <div class="grid__header header">
+          <div class="header__logo">
+            Logo
           </div>
-          <div class="main-content">
-            Content2
+          <div class="header__navbar">
+            navbar
           </div>
-          <div class="main-content">
-            Content3
+          <div class="header__likes">
+            likes
           </div>
-          <div class="main-content">
-            Content4
+          <div class="header__shoppingCart">
+            shopping cart
           </div>
-          <div class="main-content">
-            Content5
+          <div class="header__languageSelection">
+            language selection
           </div>
-          <div class="main-content">
-            Content6
+        </div> 
+        <div class="grid__main">
+          Main
+        </div>
+        <div class="grid__footer footer">
+          <div class="footer__reviews">
+            reviews
           </div>
-        </main>
-        <footer class="main-footer">
-          Footer
-        </footer>
-      </div>
-    </div>
+          <div class="footer__forTea">
+            for tea
+          </div>
+          <div class="footer__contacts">
+            contacts
+          </div>
+        </div>
+      </div> 
     </div>
   );
 }
