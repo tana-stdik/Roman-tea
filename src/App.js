@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Menu from './conponents/Menu'
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
           <div class="header__logo">
             Logo
           </div>
-          <div class="header__navbar">
-            navbar
-          </div>
+          <Menu />
           <div class="header__likes">
             likes
           </div>
