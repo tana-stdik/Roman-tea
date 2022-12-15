@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Menu from './conponents/Menu'
+import Menu from './ponents/Menu'
 
 function App() {
   return (

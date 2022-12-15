@@ -8,10 +8,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const Menu = (props) => {
+  const expand ="sm";
 
   return (
     <nav className={c.header__navbar}>
-        {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3">
           <Container fluid>
             <Navbar.Brand href="#">Про нас</Navbar.Brand>
@@ -45,7 +45,7 @@ const Menu = (props) => {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-      ))}
+      
     </nav>
   );
 }
