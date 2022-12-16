@@ -1,7 +1,7 @@
 import React from "react";
 import c from './Header.module.css';
 import Menu from './Menu/Menu';
-import imaga from './../images/logo.png';
+import imaga from './../../images/logo.png';
 import { BsFillCartFill, BsFillHeartFill } from "react-icons/bs";
 import LanguageSelection from "./LanguageSelection/LanguageSelection";
 
