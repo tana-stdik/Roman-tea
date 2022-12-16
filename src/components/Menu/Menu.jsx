@@ -11,16 +11,16 @@ const Menu = (props) => {
   const expand ="sm";
 
   return (
-    <nav className={c.header__navbar}>
-        <Navbar key={expand} expand={expand} className="mb-3">
-          <Container fluid>
-            <Navbar.Brand href="#">Про нас</Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
-            >
+    <div className={c.header__navbar}>
+      <nav>
+          <Navbar key={expand} expand={expand} className="mb-3">
+            <Container fluid>
+              <Navbar.Brand href="#">Про нас</Navbar.Brand>
+              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+              <Navbar.Offcanvas
+                id={`offcanvasNavbar-expand-${expand}`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Offcanvas
@@ -44,9 +44,9 @@ const Menu = (props) => {
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
-        </Navbar>
-      
-    </nav>
+          </Navbar>
+        </nav>
+    </div>
   );
 }
 

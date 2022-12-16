@@ -1,0 +1,30 @@
+
+
+.grid__header {
+	grid-area: header;
+	display: grid;
+	grid-template: 1fr / minmax(auto, 130px) minmax(auto, auto) minmax(auto, 80px) minmax(auto, 80px) minmax(auto, 80px);
+	border: 2px solid rgb(43, 52, 226);
+	justify-items: center;
+	align-items: center;
+}
+
+.header__logo img {
+	width: 130px;
+}
+
+.header__likes {
+	color: red;
+	width: 30px;
+	height: 30px;
+}
+
+.header__shoppingCart {
+	width: 30px;
+	height: 30px;
+	color: green;
+}
+
+.header__languageSelection {
+	border: 2px solid rgb(133, 224, 183);
+}

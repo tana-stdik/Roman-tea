@@ -13,34 +13,6 @@
 	border: 2px solid rgb(43, 226, 55);
 }
 
-.grid__header {
-	grid-area: header;
-	padding: 15px;
-	display: grid;
-	grid-template: 1fr / minmax(auto, 130px) minmax(auto, 1150px) minmax(auto, 80px) minmax(auto, 80px) minmax(auto, 80px);
-	border: 2px solid rgb(43, 52, 226);
-}
-
-.header__logo {
-	border: 2px solid rgb(217, 255, 127);
-}
-
-.header__navbar {
-	border: 2px solid rgb(244, 143, 244);
-}
-
-.header__likes {
-	border: 2px solid rgb(127, 140, 255);
-}
-
-.header__shoppingCart {
-	border: 2px solid aquamarine;
-}
-
-.header__languageSelection {
-	border: 2px solid rgb(133, 224, 183);
-}
-
 .grid__main {
 	grid-area: main;
 	border: 2px solid rgb(226, 43, 67);
@@ -49,9 +21,10 @@
 .grid__footer {
 	grid-area: footer;
 	display: grid;
-	padding: 15px;
 	grid-template: 1fr / minmax(auto, 466px) minmax(auto, 466px) minmax(auto, 466px);
 	border: 2px solid rgb(174, 226, 43);
+	justify-items: center;
+	align-items: center;
 }
 
 .footer__reviews {
