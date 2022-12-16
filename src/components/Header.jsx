@@ -3,6 +3,7 @@ import c from './Header.module.css';
 import Menu from './Menu/Menu';
 import imaga from './../images/logo.png';
 import { BsFillCartFill, BsFillHeartFill } from "react-icons/bs";
+import LanguageSelection from "./LanguageSelection/LanguageSelection";
 
 const Header = (props) => {
   return (
@@ -18,7 +19,7 @@ const Header = (props) => {
        <BsFillCartFill className={c.header__shoppingCart}/>
       </div>
       <div className={c.header__languageSelection}>
-        language selection
+        <LanguageSelection />
       </div>
     </header> 
   );
