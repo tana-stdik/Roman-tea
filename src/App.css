@@ -14,24 +14,3 @@
 	border: 2px solid rgb(226, 43, 67);
 }
 
-.grid__footer {
-	grid-area: footer;
-	display: grid;
-	grid-template: 1fr / minmax(auto, 466px) minmax(auto, 466px) minmax(auto, 466px);
-	border: 2px solid rgb(174, 226, 43);
-	justify-items: center;
-	align-items: center;
-}
-
-.footer__reviews {
-	border: 2px solid aquamarine;
-}
-
-.footer__forTea {
-	border: 2px solid rgb(217, 255, 127);
-}
-
-.footer__contacts {
-	border: 2px solid rgb(226, 43, 67);
-}
-

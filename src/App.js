@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import MainPage from './components/MainPage/MainPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -11,17 +12,7 @@ function App() {
         <div className="grid__main">
           <MainPage />
         </div>
-        <div className="grid__footer footer">
-          <div className="footer__reviews">
-            reviews
-          </div>
-          <div className="footer__forTea">
-            for tea
-          </div>
-          <div className="footer__contacts">
-            contacts
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   );
