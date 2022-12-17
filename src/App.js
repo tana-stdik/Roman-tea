@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import MainPage from './components/MainPage/MainPage';
 
-
 function App() {
   return (
     <div className="App">
@@ -13,7 +12,7 @@ function App() {
           <MainPage />
         </div>
         <div className="grid__footer footer">
-          <div class="footer__reviews">
+          <div className="footer__reviews">
             reviews
           </div>
           <div className="footer__forTea">
@@ -23,7 +22,7 @@ function App() {
             contacts
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 }
