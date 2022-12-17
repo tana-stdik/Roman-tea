@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
+import MainPage from './components/MainPage/MainPage';
 
 
 function App() {
@@ -8,17 +9,17 @@ function App() {
     <div className="App">
       <div class="grid__wrapper">
         <Header />
-        <div class="grid__main">
-          Main
+        <div className="grid__main">
+          <MainPage />
         </div>
-        <div class="grid__footer footer">
+        <div className="grid__footer footer">
           <div class="footer__reviews">
             reviews
           </div>
-          <div class="footer__forTea">
+          <div className="footer__forTea">
             for tea
           </div>
-          <div class="footer__contacts">
+          <div className="footer__contacts">
             contacts
           </div>
         </div>

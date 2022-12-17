@@ -9,6 +9,7 @@
 }
 
 .grid__main {
+	height: 350px;
 	grid-area: main;
 	border: 2px solid rgb(226, 43, 67);
 }
