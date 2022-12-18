@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { LinkContainer } from 'react-router-bootstrap'
 
 const Menu = (props) => {
   const expand ="sm";
@@ -15,7 +16,9 @@ const Menu = (props) => {
       <nav>
           <Navbar key={expand} expand={expand} className="mb-3">
             <Container fluid>
-              <Navbar.Brand href="#">Про нас</Navbar.Brand>
+              <LinkContainer to="/">
+              <Navbar.Brand>Головна</Navbar.Brand>
+              </LinkContainer>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
@@ -28,6 +31,10 @@ const Menu = (props) => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <LinkContainer to="/about">
+                  <Nav.Link>Про нас</Nav.Link>
+                  </LinkContainer>
+                  
                   <Nav.Link href="#contacts">Контакти</Nav.Link>
                   <Nav.Link href="#Delivery">Доставка</Nav.Link>
                   <Nav.Link href="#Payment">Оплата</Nav.Link>
