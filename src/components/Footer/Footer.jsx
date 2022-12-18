@@ -1,18 +1,26 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
+import { LinkContainer } from 'react-router-bootstrap';
 import c from './Footer.module.css';
 
 const Footer = (props) => {
   return (
     <footer className={c.grid__footer}>
       <div className={c.footer__reviews}>
-      <Button variant="outline-success">Відгуки</Button>{' '}
+        <LinkContainer to="/about">
+            <Nav.Link>Відгуки</Nav.Link>
+          </LinkContainer>
       </div>
       <div className={c.footer__forTea}>
-      <Button variant="outline-success">Про чай</Button>{' '}
+        <LinkContainer to="/about">
+            <Nav.Link>Про чай</Nav.Link>
+          </LinkContainer>
       </div>
       <div className={c.footer__contacts}>
-      <Button variant="outline-success">Контакти</Button>{' '}
+        <LinkContainer to="/">
+            <Nav.Link>Контакти</Nav.Link>
+          </LinkContainer>
       </div>
     </footer> 
   );
