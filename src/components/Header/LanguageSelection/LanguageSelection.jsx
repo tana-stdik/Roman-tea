@@ -1,3 +1,4 @@
+import c from './LanguageSelection.module.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 function LanguageSelection() {

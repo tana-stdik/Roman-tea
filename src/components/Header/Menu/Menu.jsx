@@ -1,4 +1,5 @@
 import React from "react";
+import logo from './logo.svg';
 import c from './Menu.module.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -13,11 +14,11 @@ const Menu = (props) => {
 
   return (
     <div className={c.header__navbar}>
-      <nav>
+      <nav className={c.header__nav}>
           <Navbar key={expand} expand={expand} className="mb-3">
             <Container fluid>
               <LinkContainer to="/">
-              <Navbar.Brand>Головна</Navbar.Brand>
+              <Navbar.Brand><img src={logo} className={c.header__logo} alt="logo" /></Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
               <Navbar.Offcanvas

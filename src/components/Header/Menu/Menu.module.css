@@ -1,4 +1,9 @@
-/* .header__navbar {
-  justify-items: stretch;
-  align-items: stretch;
-} */
+.header__nav {
+  padding-left: 0;
+}
+
+.header__logo {
+	height: 40vmin;
+  pointer-events: none;
+}
+
