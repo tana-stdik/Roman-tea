@@ -4,7 +4,6 @@
 	grid-area: header;
 	display: grid;
 	grid-template: 1fr / minmax(auto, 130px) minmax(auto, auto) minmax(auto, 80px) minmax(auto, 80px) minmax(auto, 150px);
-	border: 2px solid rgb(43, 52, 226);
 	justify-items: center;
 	align-items: center;
 }

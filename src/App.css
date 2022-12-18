@@ -1,3 +1,7 @@
+.App {
+	background-image: linear-gradient(rgb(97, 207, 141), rgb(206, 239, 219));
+}
+
 .grid__wrapper {
 	margin: 0 80px 0 80px;
 	min-height: 100%;
@@ -6,11 +10,9 @@
 	grid-template-areas: "header"
 		"main"
 		"footer";
-	border: 2px solid rgb(43, 226, 55);
 }
 
 .grid__main {
 	grid-area: main;
-	border: 2px solid rgb(226, 43, 67);
 }
 

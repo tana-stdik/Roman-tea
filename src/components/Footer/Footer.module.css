@@ -2,7 +2,6 @@
 	grid-area: footer;
 	display: grid;
 	grid-template: 1fr / minmax(auto, 466px) minmax(auto, 466px) minmax(auto, 466px);
-	border: 2px solid rgb(174, 226, 43);
 	justify-items: center;
 	align-items: center;
 }
