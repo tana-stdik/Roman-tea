@@ -6,7 +6,7 @@ import MainPage from './components/MainPage/MainPage';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
     
@@ -15,7 +15,7 @@ function App() {
         <Header />
         <main className="grid__main">
           <Routes>
-            <Route path="/" element={<MainPage />}/>
+            <Route path="/" element={<MainPage goodsItem={props.state.goodsPage.goodsItem}/>}/>
             <Route path="/about" element={<About/>}/>
             {/* <Route path="#" element={<News/>}/>
             <Route path="/#" element={<Music/>}/>
