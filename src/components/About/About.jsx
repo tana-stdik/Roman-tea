@@ -4,8 +4,9 @@ import c from './About.module.css';
 const About = (props) => {
   return (
     <div>
-      About
-    </div>
+      <h2>About</h2>
+      
+     </div>
   );
 }
 
