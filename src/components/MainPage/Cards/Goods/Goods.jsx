@@ -7,9 +7,9 @@ function Goods(props) {
   return (
     <Col>  
     <Card>
-      <Card.Img className={c.goodsImg} variant="top" src={props.goodsUrl} />
+      <Card.Img className={c.goods_img} variant="top" src={props.goodsUrl} alt="Green tea" />
       <Card.Body>
-        <Card.Title>{props.name}</Card.Title>
+        <Card.Title className={c.goods_title}>{props.name}</Card.Title>
         <Card.Text>
           {props.text}
         </Card.Text>
