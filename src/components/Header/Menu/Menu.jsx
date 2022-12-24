@@ -43,7 +43,7 @@ const Menu = (props) => {
                 <Form className="d-flex">
                   <Form.Control
                     type="search"
-                    placeholder="Search"
+                    placeholder="Я шукаю..."
                     className="me-2"
                     aria-label="Search"
                   />

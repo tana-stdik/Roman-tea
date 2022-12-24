@@ -1,5 +1,4 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from 'react-router-bootstrap';
 import c from './Footer.module.css';
