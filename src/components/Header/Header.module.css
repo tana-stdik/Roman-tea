@@ -6,11 +6,8 @@
 	grid-template: 1fr / 1fr minmax(auto, 80px) minmax(auto, 80px) minmax(auto, 150px);
 	justify-items: center;
 	align-items: center;
+	position: relative;
 }
 
-.header__shoppingCart {
-	width: 30px;
-	height: 30px;
-	color: rgb(25,135,84);
-}
+
 
