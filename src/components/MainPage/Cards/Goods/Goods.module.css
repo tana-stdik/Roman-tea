@@ -1,8 +1,14 @@
+.card_goods {
+  height: 100%;
+}
+
+.goods_button {
+  text-align: center;
+  margin: 20px auto;
+  width: 200px;
+}
+
 .goods_img {
   width: 290px;
   margin: 10px auto;
-}
-
-.goods_title {
-  text-align: center;
 }

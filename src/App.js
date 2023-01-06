@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import MainPage from './components/MainPage/MainPage';
 import About from './components/About/About';
+import Contacts from './components/Contacts/Contacts';
+import Delivery from './components/Delivery/Delivery';
+import Payment from './components/Payment/Payment';
 import Footer from './components/Footer/Footer';
 
 function App(props) {
@@ -17,9 +20,9 @@ function App(props) {
           <Routes>
             <Route path="/" element={<MainPage goodsItem={props.state.goodsPage.goodsItem}/>}/>
             <Route path="/about" element={<About/>}/>
-            {/* <Route path="#" element={<News/>}/>
-            <Route path="/#" element={<Music/>}/>
-            <Route path="/#" element={<Setting/>}/> */}
+            <Route path="/contacts" element={<Contacts/>}/>
+            <Route path="/delivery" element={<Delivery/>}/>
+            <Route path="/payment" element={<Payment/>}/>
           </Routes>
         </main>
         <Footer />

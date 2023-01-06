@@ -2,6 +2,7 @@ import react, { useState } from 'react';
 import { BsFillCartFill } from "react-icons/bs";
 import Button from 'react-bootstrap/Button';
 import c from './ShopCart.module.css';
+import ShopCartList from './ShopCartList/ShopCartList';
 
 const ShopCart = (props) => {
 
@@ -13,9 +14,7 @@ const ShopCart = (props) => {
         <BsFillCartFill className={c.header__shoppingCart}/>
       </Button>
       {cart &&
-      (<div className={c.card__shopCart}>
-
-      </div>
+      (<ShopCartList />
       )}
     </div>
   );

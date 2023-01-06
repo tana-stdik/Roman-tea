@@ -33,12 +33,17 @@ const Menu = (props) => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <LinkContainer to="/about">
-                  <Nav.Link>Про нас</Nav.Link>
+                    <Nav.Link>Про нас</Nav.Link>
                   </LinkContainer>
-                  
-                  <Nav.Link href="#contacts">Контакти</Nav.Link>
-                  <Nav.Link href="#Delivery">Доставка</Nav.Link>
-                  <Nav.Link href="#Payment">Оплата</Nav.Link>
+                    <LinkContainer to="/contacts">
+                  <Nav.Link>Контакти</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/delivery">
+                    <Nav.Link>Доставка</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/payment">
+                    <Nav.Link>Оплата</Nav.Link>
+                  </LinkContainer>
                 </Nav>
                 <Form className="d-flex">
                   <Form.Control
