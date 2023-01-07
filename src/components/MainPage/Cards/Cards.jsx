@@ -6,7 +6,7 @@ import c from './Cards.module.css';
 function Cards(props) {
 
   let goodsElements = props.goodsItem.map(g => (
-    <Goods className={c.card} goodsUrl={g.goodsUrl} name={g.name} text={g.text}/>
+    <Goods className={c.card} goodsUrl={g.goodsUrl} path={g.path} name={g.name} text={g.text}/>
   ))
 
   return (

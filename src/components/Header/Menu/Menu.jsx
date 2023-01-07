@@ -35,8 +35,8 @@ const Menu = (props) => {
                   <LinkContainer to="/about">
                     <Nav.Link>Про нас</Nav.Link>
                   </LinkContainer>
-                    <LinkContainer to="/contacts">
-                  <Nav.Link>Контакти</Nav.Link>
+                  <LinkContainer to="/contacts">
+                    <Nav.Link>Контакти</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/delivery">
                     <Nav.Link>Доставка</Nav.Link>

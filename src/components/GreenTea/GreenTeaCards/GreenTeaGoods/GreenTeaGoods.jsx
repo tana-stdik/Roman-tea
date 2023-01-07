@@ -2,26 +2,23 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { LinkContainer } from 'react-router-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import c from './Goods.module.css';
+import c from './GreenTeaGoods.module.css';
 
-function Goods(props) {
+function GreenTeaGoods(props) {
   return (
   <Col>  
     <Card className={c.card_goods}>
       <Card.Img className={c.goods_img} variant="top" src={props.goodsUrl} alt="Green tea" />
-        <LinkContainer to={props.path}>
-          <Nav.Link className={c.goods_button}><Button variant="success">{props.name}</Button></Nav.Link>
-        </LinkContainer>
       <Card.Body>
+        <Card.Title className={c.goods_title}>{props.name}</Card.Title>
         <Card.Text>
           {props.text}
         </Card.Text>
       </Card.Body>
+      <Button className={c.goods_button} variant="success">Купити</Button>
     </Card>
   </Col>     
   );
 }
 
-export default Goods;
+export default GreenTeaGoods;
