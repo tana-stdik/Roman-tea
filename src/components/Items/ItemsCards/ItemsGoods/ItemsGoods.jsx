@@ -2,13 +2,13 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import c from './GreenTeaGoods.module.css';
+import c from './ItemsGoods.module.css';
 
-function GreenTeaGoods(props) {
+function ItemsGoods(props) {
   return (
   <Col>  
     <Card className={c.card_goods}>
-      <Card.Img className={c.goods_img} variant="top" src={props.goodsUrl} alt="Green tea" />
+      <Card.Img className={c.goods_img} variant="top" src={props.goodsUrl} alt="Image" />
       <Card.Body>
         <Card.Title className={c.goods_title}>
           {props.name}
@@ -26,4 +26,4 @@ function GreenTeaGoods(props) {
   );
 }
 
-export default GreenTeaGoods;
+export default ItemsGoods;

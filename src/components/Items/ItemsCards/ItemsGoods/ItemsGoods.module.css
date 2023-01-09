@@ -13,9 +13,7 @@
   margin: 10px auto;
 }
 
-.goods_title{
-  text-align: center; 
-}
-.goods_price{
+.goods_title,
+.goods_price {
   text-align: center;
 }
