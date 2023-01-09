@@ -10,9 +10,14 @@ function GreenTeaGoods(props) {
     <Card className={c.card_goods}>
       <Card.Img className={c.goods_img} variant="top" src={props.goodsUrl} alt="Green tea" />
       <Card.Body>
-        <Card.Title className={c.goods_title}>{props.name}</Card.Title>
+        <Card.Title className={c.goods_title}>
+          {props.name}
+        </Card.Title>
         <Card.Text>
           {props.text}
+        </Card.Text>
+        <Card.Text className={c.goods_price}>
+          Ціна: {props.price} грн.
         </Card.Text>
       </Card.Body>
       <Button className={c.goods_button} variant="success">Купити</Button>

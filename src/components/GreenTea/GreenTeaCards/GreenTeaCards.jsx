@@ -6,7 +6,7 @@ import c from './GreenTeaCards.module.css';
 function GreenTeaCards(props) {
 
   let goodsElements = props.goodsItem.map(g => (
-    <GreenTeaGoods className={c.card} goodsUrl={g.goodsUrl} name={g.name} text={g.text}/>
+    <GreenTeaGoods className={c.card} goodsUrl={g.goodsUrl} name={g.name} text={g.text} price={g.price} />
   ))
 
   return (
