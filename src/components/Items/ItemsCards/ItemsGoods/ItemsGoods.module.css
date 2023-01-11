@@ -2,9 +2,12 @@
   height: 100%;
 }
 
+.goods_linkCont {
+  margin: 20px auto;
+}
+
 .goods_button {
   text-align: center;
-  margin: 20px auto;
   width: 200px;
 }
 

@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Contacts from './components/Contacts/Contacts';
 import Delivery from './components/Delivery/Delivery';
 import Payment from './components/Payment/Payment';
+import ShopCartList from './components/Header/ShopCart/ShopCartList/ShopCartList';
 import Items from './components/Items/Items';
 import Footer from './components/Footer/Footer';
 
@@ -25,6 +26,7 @@ function App(props) {
             <Route path="/delivery" element={<Delivery/>}/>
             <Route path="/payment" element={<Payment/>}/>
             <Route path="/greenTea" element={<Items goodsItem={props.state.goodsPageGreenTea.goodsItem}/>}/>
+            <Route path="/shopCartList" element={<ShopCartList goodsItem={props.state.goodsPageGreenTea.goodsItem}/>}/>
             <Route path="/blackTea" element={<Items goodsItem={props.state.goodsPageBlackTea.goodsItem}/>}/>
             <Route path="/disposableTea" element={<Items goodsItem={props.state.goodsPageDisposableTea.goodsItem}/>}/>
             <Route path="/phytoTea" element={<Items goodsItem={props.state.goodsPagePhytoTea.goodsItem}/>}/>

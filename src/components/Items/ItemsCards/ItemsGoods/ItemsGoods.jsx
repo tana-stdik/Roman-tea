@@ -2,6 +2,8 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
+import { LinkContainer } from 'react-router-bootstrap';
 import c from './ItemsGoods.module.css';
 
 function ItemsGoods(props) {
@@ -20,7 +22,12 @@ function ItemsGoods(props) {
           Ціна: {props.price} грн.
         </Card.Text>
       </Card.Body>
-      <Button className={c.goods_button} variant="success">Купити</Button>
+      <LinkContainer className={c.goods_linkCont} to="/shopCartList">
+        <Nav.Link>
+          <Button className={c.goods_button} variant="success">Купити</Button>
+        </Nav.Link>
+      </LinkContainer>
+      
     </Card>
   </Col>     
   );
