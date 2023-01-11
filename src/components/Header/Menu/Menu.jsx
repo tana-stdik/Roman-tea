@@ -8,9 +8,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { LinkContainer } from 'react-router-bootstrap';
+import { useContext } from 'react';
+import { LanguageContext } from '../../../languageContext';
+
+const titles = {
+  ua: ["Про нас", "Контакти", "Доставка", "Оплата", "Я шукаю", "Пошук"],
+  ru: ["О нас", "Контакты", "Доставка", "Оплата", "Я ищу", "Поиск"],
+  en: ["About", "Contacts", "Delivery", "Payment", "I'm looking", "Search"],
+}
+
 
 const Menu = (props) => {
   const expand ="sm";
+  const languageContext = useContext(LanguageContext);
 
   return (
     <div className={c.header__navbar}>
@@ -33,26 +43,26 @@ const Menu = (props) => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <LinkContainer to="/about">
-                    <Nav.Link>Про нас</Nav.Link>
+                    <Nav.Link>{titles[languageContext.language][0]}</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/contacts">
-                    <Nav.Link>Контакти</Nav.Link>
+                    <Nav.Link>{titles[languageContext.language][1]}</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/delivery">
-                    <Nav.Link>Доставка</Nav.Link>
+                    <Nav.Link>{titles[languageContext.language][2]}</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/payment">
-                    <Nav.Link>Оплата</Nav.Link>
+                    <Nav.Link>{titles[languageContext.language][3]}</Nav.Link>
                   </LinkContainer>
                 </Nav>
                 <Form className="d-flex">
                   <Form.Control
                     type="search"
-                    placeholder="Я шукаю..."
+                    placeholder={titles[languageContext.language][4]}
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Пошук</Button>
+                  <Button variant="outline-success">{titles[languageContext.language][5]}</Button>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

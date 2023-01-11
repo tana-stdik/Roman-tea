@@ -10,12 +10,13 @@ const titles = {
   en: ["Language selection", "Ukrainian", "Russian" , "English"],
 }
 
-function handlerLanguage(language) {
-  LanguageContext.setLanguage(language);
-}
-
 function LanguageSelection() {
   const languageContext = useContext(LanguageContext);
+  
+  function handlerLanguage(language) {
+    languageContext.setLanguage(language);
+  }
+
   return (
     <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
